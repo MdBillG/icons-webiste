@@ -7,9 +7,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={open.className}>
-        <Providers>
-          {children}
-        </Providers>
+        <div className="dark:bg-black">
+          <Providers>
+            {children}
+          </Providers>
+        </div>
+
       </body>
     </html>
   );
