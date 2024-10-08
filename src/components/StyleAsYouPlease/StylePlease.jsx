@@ -3,8 +3,6 @@ import * as LucideIcons from 'lucide-react';
 import { useDispatch, useSelector } from 'react-redux';
 
 const iconNames = Object.keys(LucideIcons).filter(name => name !== 'createLucideIcon');
-
-// Simple seeded random number generator
 const seededRandom = (seed) => {
     let state = seed;
     return () => {
@@ -12,9 +10,7 @@ const seededRandom = (seed) => {
         return state / 4294967296;
     };
 };
-
-const RandomIconsGrid = () => {
-
+const StylePlease = () => {
     const dispatch = useDispatch();
     const darkMode = useSelector((state) => state.color.color);
     console.log("darkMode", darkMode)
@@ -38,6 +34,6 @@ const RandomIconsGrid = () => {
             </div>
         </div>
     );
-};
+}
 
-export default RandomIconsGrid;
+export default StylePlease

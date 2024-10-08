@@ -4,6 +4,7 @@ import Slogan from './Slogan/Slogan'
 import RandomIconsGrid from './ramdonIcons/RandomIcons'
 import ThreeCards from '../3Cards/3Cards'
 import Available from '../Available/Available'
+import AsYou from '../StyleAsYouPlease/AsYou'
 
 const FirstCard = () => {
     return (
@@ -19,6 +20,7 @@ const FirstCard = () => {
             <div className=''>
                 <ThreeCards />
                 <Available />
+                <AsYou />
             </div>
         </>
     )
