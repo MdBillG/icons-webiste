@@ -1,8 +1,11 @@
 'use client'
 import { Moon, Sun } from 'lucide-react'
+import { useDispatch, useSelector } from 'react-redux';
 import React, { useEffect, useState } from 'react'
+import { setColor } from '@/store/theme'
 
 const LightDark = () => {
+    const dispatch = useDispatch()
     const [darkMode, setDarkMode] = useState(false)
 
     useEffect(() => {
@@ -21,6 +24,8 @@ const LightDark = () => {
             document.documentElement.classList.remove('dark')
             localStorage.setItem('darkMode', 'false')
         }
+        dispatch(setColor(darkMode));
+
     }, [darkMode])
 
     const toggleDarkMode = () => setDarkMode(!darkMode)
