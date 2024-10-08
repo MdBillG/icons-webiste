@@ -3,6 +3,7 @@ import Version from './Version/version'
 import Slogan from './Slogan/Slogan'
 import RandomIconsGrid from './ramdonIcons/RandomIcons'
 import ThreeCards from '../3Cards/3Cards'
+import Available from '../Available/Available'
 
 const FirstCard = () => {
     return (
@@ -17,6 +18,7 @@ const FirstCard = () => {
         </div>
             <div className=''>
                 <ThreeCards />
+                <Available />
             </div>
         </>
     )
