@@ -8,7 +8,7 @@ import AsYou from '../StyleAsYouPlease/AsYou'
 
 const FirstCard = () => {
     return (
-        <><div className='flex justify-around my-10 gap-2'>
+        <><div className='flex justify-around my-10 gap-2 max-w-7xl mx-auto'>
             <div className='flex flex-col gap-3'>
                 <Version />
                 <Slogan />
@@ -17,11 +17,9 @@ const FirstCard = () => {
                 <RandomIconsGrid />
             </div>
         </div>
-            <div className=''>
-                <ThreeCards />
-                <Available />
-                <AsYou />
-            </div>
+            <ThreeCards />
+            <Available />
+            <AsYou />
         </>
     )
 }

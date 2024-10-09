@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const Slider = ({ min, max, even, color }) => {
+const Slider = ({ min, max, even, color, setCurrrentValue }) => {
     const [value, setValue] = useState("");
     let mini = 14;
     if (even) {
@@ -13,10 +13,16 @@ const Slider = ({ min, max, even, color }) => {
     if (mini < 16) {
         mini = 16;
     }
+    const combinedValue = even ? mini : value
+
+
+    useEffect(() => {
+        setCurrrentValue(combinedValue)
+    }, [value])
+
     const handleChange = (e) => {
         setValue(Number(e.target.value));
     };
-    const combinedValue = even ? mini : value
     return (
         <div className="w-[10%]">
             <div className="relative pt-1">

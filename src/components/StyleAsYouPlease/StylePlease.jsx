@@ -10,24 +10,24 @@ const seededRandom = (seed) => {
         return state / 4294967296;
     };
 };
-const StylePlease = () => {
+const StylePlease = ({ color, currentValue }) => {
     const dispatch = useDispatch();
     const darkMode = useSelector((state) => state.color.color);
     console.log("darkMode", darkMode)
     const getRandomIcons = useMemo(() => {
         const rng = seededRandom(123); // Use a fixed seed
         const shuffled = [...iconNames]?.sort(() => 0.5 - rng());
-        return shuffled?.slice(0, 40); // Always generate 64 icons
+        return shuffled?.slice(0, 56); // Always generate 64 icons
     }, []);
 
     return (
-        <div className={darkMode ? "p-4 rounded-md  bg-black" : "bg-gray-100 rounded-md p-4"}>
-            <div className="grid grid-cols-10 gap-1">
+        <div className={darkMode ? "rounded-md  bg-black  p-1" : "bg-gray-100 rounded-md p-1 "}>
+            <div className="flex flex-wrap">
                 {getRandomIcons?.map((iconName, index) => {
                     const IconComponent = LucideIcons[iconName];
                     return (
-                        <div key={index} className="bg-white p-4 rounded-md shadow-sm flex items-center justify-center">
-                            <IconComponent size={14} color={darkMode ? "black" : "currentColor"} className="text-gray-600" />
+                        <div key={index} className="bg-white p-5 rounded-full shadow-sm flex items-center justify-center m-2">
+                            <IconComponent size={16} color={darkMode ? color : color} className="text-gray-600" />
                         </div>
                     );
                 })}
