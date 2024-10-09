@@ -5,6 +5,8 @@ import RandomIconsGrid from './ramdonIcons/RandomIcons'
 import ThreeCards from '../3Cards/3Cards'
 import Available from '../Available/Available'
 import AsYou from '../StyleAsYouPlease/AsYou'
+import Developer from '../MeetTheDeveloper/Developer'
+import Moving from '../MovingIcons/Moving'
 
 const FirstCard = () => {
     return (
@@ -20,6 +22,8 @@ const FirstCard = () => {
             <ThreeCards />
             <Available />
             <AsYou />
+            <Developer />
+            <Moving />
         </>
     )
 }

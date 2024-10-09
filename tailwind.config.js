@@ -7,7 +7,12 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'scroll-left': 'scroll-left 60s linear infinite',
+        'scroll-right': 'scroll-right 60s linear infinite',
+      },
+    },
   },
   plugins: [],
 };
