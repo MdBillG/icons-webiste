@@ -3,6 +3,7 @@ import GitHub from './github/GitHub'
 import LightDark from './Mode/Light-Dark'
 import BrandName from './BrandName/BrandName'
 import IconsName from './BrandName/Icons'
+import PacakageName from '../Package/PacakageName'
 
 const NavBar = () => {
     return (
@@ -13,6 +14,9 @@ const NavBar = () => {
                 </div>
                 <div className='flex gap-3 mt-1'>
                     <IconsName />
+                    <div className='border-l-[1px] border-gray-950 dark:border-gray-100 m-1'>
+                    </div>
+                    <PacakageName />
                     <div className='border-l-[1px] border-gray-950 dark:border-gray-100 m-1'>
                     </div>
                     <LightDark />
