@@ -1,5 +1,6 @@
 import { IBM_Plex_Sans } from "next/font/google"
 import { Providers } from '../components/Providers'
+import Footer from "@/components/Footer/Footer";
 
 const open = IBM_Plex_Sans({ subsets: ["latin"], weight: '400' })
 
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
           <Providers>
             {children}
           </Providers>
+          <Footer />
         </div>
 
       </body>
