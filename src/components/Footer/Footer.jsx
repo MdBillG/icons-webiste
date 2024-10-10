@@ -4,10 +4,8 @@ import React from 'react'
 const Footer = () => {
     return (
         <div className='border-t-[1px] '>
-
-
             <div className='flex  justify-between max-w-[68rem] mx-auto my-7'>
-                <div>Copyright © 2024 Iconarim</div>
+                <div>Copyright © 2024 Iconarium</div>
                 <div className='flex items-baseline'>
                     GitHub
                     <div className='mt-1 ml-1 flex items-center'>
@@ -20,7 +18,6 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }
