@@ -2,6 +2,7 @@
 
 import SideBar from "@/components/SideBar/SideBar";
 import { current } from "@reduxjs/toolkit";
+import { AirVent } from "bilalreact-icons-library";
 import React, { useState } from "react";
 
 const Packages = () => {
@@ -47,7 +48,7 @@ const Packages = () => {
                 </div>
             </div>
 
-            <h1 className="text-center my-5 text-2xl font-bold">Soon</h1>
+            <h1 className="text-center my-5 text-2xl ">Soon...</h1>
             <div className="max-w-md bg-[#F6F6F7] mx-auto p-3 my-5 flex flex-col gap-4 rounded-md">
                 <div className=" flex justify-center gap-5 ">
                     <div className="bg-white p-2">
@@ -65,7 +66,6 @@ const Packages = () => {
                             </g>
                         </svg>
                     </div>
-
                     <div className="flex flex-col gap-2">
                         <h1>Iconarium-angular</h1>
                         <div className="flex">
