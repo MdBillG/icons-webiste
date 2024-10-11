@@ -87,6 +87,7 @@ const IconShowcase = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleSideBar = () => setIsOpen(true);
+    const closeSideBar = () => setIsOpen(false);
 
     const handleIconClick = (iconName) => {
         setClickedIcon(iconName);
@@ -125,7 +126,7 @@ const IconShowcase = () => {
 
     return (
         <>
-            <SideBar isOpen={isOpen}>
+            <SideBar isOpen={isOpen} onClose={closeSideBar}>
                 {clickedIcon && (
                     <div className="flex flex-col items-center justify-center p-4 gap-2 ">
                         <div className="flex items-baseline">
@@ -144,27 +145,30 @@ const IconShowcase = () => {
                 )}
             </SideBar>
 
-            <div
-                className={`${totalWidth} transition-all duration-300 ease-in-out my-10`}
-            >
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
-                    {iconNames.map((iconName) => (
-                        <div
-                            key={iconName}
-                            className="flex flex-col items-center justify-center p-2 border rounded cursor-pointer hover:bg-gray-100 relative"
-                            onClick={() => handleIconClick(iconName)}
-                        >
-                            {renderIcon(iconName)}
-                            <span className="mt-2 text-xs text-center">{iconName}</span>
-                            {copiedIcon === iconName && (
-                                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 bg-black text-white text-xs rounded py-1 px-2 mb-2">
-                                    JSX Copied!
-                                </div>
-                            )}
-                        </div>
-                    ))}
+            <div className="mx-9">
+                <div
+                    className={`${totalWidth} transition-all duration-300 ease-in-out my-10`}
+                >
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
+                        {iconNames.map((iconName) => (
+                            <div
+                                key={iconName}
+                                className="flex flex-col items-center justify-center p-2 border rounded cursor-pointer hover:bg-gray-100 relative"
+                                onClick={() => handleIconClick(iconName)}
+                            >
+                                {renderIcon(iconName)}
+                                <span className="mt-2 text-xs text-center">{iconName}</span>
+                                {copiedIcon === iconName && (
+                                    <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 bg-black text-white text-xs rounded py-1 px-2 mb-2">
+                                        JSX Copied!
+                                    </div>
+                                )}
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
+
         </>
     );
 };
