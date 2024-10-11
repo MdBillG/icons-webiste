@@ -10,8 +10,8 @@ import Moving from '../MovingIcons/Moving'
 
 const FirstCard = () => {
     return (
-        <><div className='flex justify-around my-10 gap-2 max-w-7xl mx-auto'>
-            <div className='flex flex-col gap-3'>
+        <div className='pt-20'><div className='flex justify-around  gap-2 max-w-7xl mx-auto'>
+            <div className='flex flex-col gap-3 mb-10'>
                 <Version />
                 <Slogan />
             </div>
@@ -24,7 +24,7 @@ const FirstCard = () => {
             <AsYou />
             <Developer />
             <Moving />
-        </>
+        </div>
     )
 }
 

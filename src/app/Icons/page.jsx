@@ -145,9 +145,9 @@ const IconShowcase = () => {
                 )}
             </SideBar>
 
-            <div className="mx-9">
+            <div className="mx-9 py-20 z-30 ">
                 <div
-                    className={`${totalWidth} transition-all duration-300 ease-in-out my-10`}
+                    className={`${totalWidth} transition-all duration-300 ease-in-out`}
                 >
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
                         {iconNames.map((iconName) => (
