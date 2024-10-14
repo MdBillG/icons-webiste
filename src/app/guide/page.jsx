@@ -5,12 +5,13 @@ import React from 'react'
 
 const Guide = () => {
     return (
-        <div className='flex max-w-[68rem] mx-auto pt-10 z-50'>
+        <div className='flex max-w-[68rem] mx-auto pt-10 '>
             <Guides />
             <OnPage />
-
         </div>
     )
 }
 
 export default Guide
+
+// z-50

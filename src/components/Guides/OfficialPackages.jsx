@@ -2,7 +2,7 @@ import React from "react";
 
 const OfficialPackages = () => {
     return (
-        <div className="my-10">
+        <div className="my-10" id="officalPackages">
             <h1 className="font-bold text-2xl text-[#3C3C43]">
                 Official Packages
             </h1>

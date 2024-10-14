@@ -2,7 +2,7 @@ import React from "react";
 
 const AvailableIcons = () => {
     return (
-        <div className="my-10">
+        <div className="my-10" id="availableIcons">
             <h1 className="font-bold text-2xl text-[#3C3C43]">Available Icons </h1>
             <span className="text-block">
                 Iconarium contains icons with different variants and states, allowing users
