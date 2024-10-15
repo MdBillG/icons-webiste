@@ -25,7 +25,8 @@ const NavBar = () => {
                     <LightDark />
                     <div className='border-l-[1px] border-gray-950 dark:border-gray-100 m-1'>
                     </div>
-                    <GitHub />
+                    <Link href="https://github.com/MdBillG/icons-webiste">                    <GitHub />
+                    </Link>
                 </div>
             </div>
 
