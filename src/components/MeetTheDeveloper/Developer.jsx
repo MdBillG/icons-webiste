@@ -29,6 +29,7 @@
 
 
 import { Github, Linkedin } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
 
 const Developer = () => {
@@ -47,9 +48,9 @@ const Developer = () => {
                     <p className="text-gray-600 mb-2">Creator of Iconarium</p>
                     <p className="text-gray-800 mb-4">Software Engineer</p>
                     <div className="flex space-x-4">
-                        <a href="#" className="text-gray-700 hover:text-gray-900">
+                        <Link href="https://github.com/MdBillG" className="text-gray-700 hover:text-gray-900">
                             <Github size={24} />
-                        </a>
+                        </Link>
                         <a href="#" className="text-gray-700 hover:text-gray-900">
                             <Linkedin size={24} />
                         </a>
