@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link'
 
 const Slogan = () => {
     return (
@@ -18,7 +19,11 @@ const Slogan = () => {
                 Made with expert craftsmanship.
             </p>
             <div className="flex gap-3">
-                <div className="bg-red-700 p-2 text-white rounded-md">View all icons</div>
+
+                <div className="bg-red-700 p-2 text-white rounded-md">
+                    <Link href="/Icons">View all icons
+                    </Link>
+                </div>
                 <div className='bg-[#E4E4E9] p-2 rounded-md '>Get Started</div>
                 <div className='bg-[#E4E4E9] p-2 rounded-md '>GitHub</div>
             </div >
