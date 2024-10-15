@@ -14,7 +14,8 @@ const NavBar = () => {
 
 
                 <div className='flex gap-3 mt-1'>
-                    <IconsName />
+                    <Link href="/Icons">  <IconsName /></Link>
+
                     <div className='border-l-[1px] border-gray-950 dark:border-gray-100 m-1'>
                     </div>
                     <PacakageName />
