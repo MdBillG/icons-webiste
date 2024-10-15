@@ -25,7 +25,7 @@ const Slogan = () => {
                     </Link>
                 </div>
                 <div className='bg-[#E4E4E9] p-2 rounded-md '> <Link href="/guide">Get Started</Link></div>
-                <div className='bg-[#E4E4E9] p-2 rounded-md '>GitHub</div>
+                <div className='bg-[#E4E4E9] p-2 rounded-md '> <Link href="https://github.com/MdBillG/icons-webiste">GitHub</Link></div>
             </div >
         </>
     );
