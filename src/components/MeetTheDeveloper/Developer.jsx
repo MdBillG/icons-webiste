@@ -51,9 +51,9 @@ const Developer = () => {
                         <Link href="https://github.com/MdBillG" className="text-gray-700 hover:text-gray-900">
                             <Github size={24} />
                         </Link>
-                        <a href="#" className="text-gray-700 hover:text-gray-900">
+                        <Link href="https://www.linkedin.com/in/mohammad-bilal-g/" className="text-gray-700 hover:text-gray-900">
                             <Linkedin size={24} />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
